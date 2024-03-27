@@ -99,6 +99,19 @@ body {
     padding: 40px;
 }
 
+.wrapper .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    background: #162938;
+    font-size: 2em;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .form-box h2 {
     font-size: 2em;
     color: #162938;
@@ -202,7 +215,6 @@ body {
 
 .login-register p a:hover {
     text-decoration: underline;
-
 }
 
 @media only screen and (max-width: 960px) {
