@@ -1,0 +1,9 @@
+.wrapper button {
+    background-color: #ACEB98;
+    border-radius: 50px;
+    padding: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Varela", sans-serif;
+}
