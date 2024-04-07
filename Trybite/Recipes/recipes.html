@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="navbar-login.css">
     <link rel="stylesheet" href="recipes.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -21,64 +21,25 @@
             <button class="btnLogin-popup">Login</button>
         </nav>
     </header>
-
-<div class="wrapper">
-    <span class="icon-close"><ion-icon name="close"></ion-icon></span>
-
-    <div class="form-box login">
-        <h2>Login</h2>
-        <form action="#">
-            <div class="input-box">
-                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox">Remember me</label>
-                <a href="#">Forgot Password?</a>
-            </div>
-            <button type="submit" class="btn">Login</button>
-            <div class="login-register">
-                <p>Don't have an account?<a href="#" class="register-link">Register</a></p>
-            </div>
-        </form>
-    </div>
-
-    <div class="form-box register">
-        <h2>Registration</h2>
-        <form action="#">
-            <div class="input-box">
-                <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
-                <input type="text" required>
-                <label>Username</label>
-            </div>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="email" required>
-                <label>Email</label>
-            </div>
-            <div class="input-box">
-                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                <input type="password" required>
-                <label>Password</label>
-            </div>
-            <div class="remember-forgot">
-                <label><input type="checkbox" required>I agree to the terms & services</label>
-            </div>
-            <button type="submit" class="btn">Register</button>
-            <div class="login-register">
-                <p>Already have and account?<a href="#" class="login-link">Login</a></p>
-            </div>
-        </form>
-    </div>
+    <button id="UploadRecipe">Upload a recipe g </ion-icon></button>
+<div class="recipes">
+    <div class="recipe1">
+        <p id="recipe1author">Recipe author</p>
+        <p id="recipe1name">Strawberry cake</p>
+        <p id="recipe1decription">Delicious, easy to make strawbery cake for 3 people</p>
+        <p id="recipe1time"><span><svg id="recipe1clock" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48"><path fill="#00acc1" d="M44,24c0,11.044-8.956,20-20,20S4,35.044,4,24S12.956,4,24,4S44,12.956,44,24z"></path><path fill="#eee" d="M40,24c0,8.838-7.162,16-16,16S8,32.838,8,24S15.163,8,24,8S40,15.163,40,24z"></path><path fill="#78909c" d="M23 39.95C23.332 39.97 23.662 40 24 40s.668-.03 1-.05V36h-2V39.95zM36 25h3.95C39.97 24.668 40 24.338 40 24s-.03-.668-.05-1H36V25zM8.05 25H12v-2H8.05C8.03 23.332 8 23.662 8 24S8.03 24.668 8.05 25z"></path><path d="M31.664,30.27L29.934,32l-6.797-6.797l1.73-1.73L31.664,30.27z"></path><path d="M27,24c0,1.656-1.344,3-3,3s-3-1.344-3-3s1.344-3,3-3S27,22.344,27,24"></path><path d="M23,11h2v10.336h-2V11z"></path><path fill="#00acc1" d="M25,24c0,0.551-0.449,1-1,1s-1-0.449-1-1s0.449-1,1-1S25,23.449,25,24"></path></svg></span>Time to make: 50min</p>
+        <p id="recipe1cost">Cost to make: 7eur</p>
+        <img src="strawberrycake.jpg" id="recipe1image">
+        <div class="stats">
+            <div id="recipe1views">Views </div>
+            <div id="recipe1views">Likes </div>
+            <div id="recipe1views">Dislikes </div>
+        </div>
+        <p id="recipe1Rating">Rating</p>
+        <p id="recipe1Category">Category</p>
+        <p id="recipe1Date">Date</p>
 </div>
-<button id="UploadRecipe">Upload a recipe <ion-icon name="add-circle"></ion-icon></button>
-
+</div>
 <script src="recipes.js"></script>
 
 </body>
