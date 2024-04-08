@@ -23,64 +23,57 @@
     flex-wrap: wrap;
 }
 
-.recipes .recipe1 {
+.recipes .recipeCard {
     background-color: white;
     border: #aae19c 8px solid;
     color: #2A2B2E;
     padding: 20px;
     margin: 17px;
     border-radius: 20px;
-    height: 500px;
+    height: 750px;
     width: 470px;
 }
 
-.recipes .recipe1 #recipe1author {
+.recipes .recipeCard .recipeCardAuthor {
     font-size: 15px;
 }
 
-.recipes .recipe1 #recipe1name {
+.recipes .recipeCard .recipeCardName {
     font-weight: 650;
     font-size: 25px;
     text-align: center;
     font-family: "Poppins", sans-serif;
 }
 
-.recipes .recipe1 #recipe1decription {
+.recipes .recipeCard .recipeCardDecription {
     font-size: 14px;
     text-align: center;
 }
 
-.recipes .recipe1 #recipe1time {
+.recipes .recipeCard .recipeCardTime {
     font-size: 18px;
     text-align: center;
 }
 
-.recipes .recipe1 #recipe1clock {
+.recipes .recipeCard .recipeCardClock {
     height: 35px;
 
 }
 
-.recipes .recipe1 #recipe1image {
+.recipes .recipeCard .recipeCardImage {
     width: 100%;
     height: 60%;
     align-content: center;
 
 }
-.stats {
+.recipes .recipeCard .recipeCardStats {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#recipe1clock {
-    align-items: left;
-    align-content: left;
-    align-self: left;
-    text-align: left;
-}
 
-
-.recipes .recipe1 #recipe1Date {
+.recipes .recipeCard .recipeCardDate {
     bottom: 0;
     position: absolute;
     width: 45px;
@@ -88,6 +81,15 @@
     display: flex;
     justify-content: left;
     align-items: left;
+}
+
+.recipes .recipeCard .recipeCardInteract {
+    background-color: #32522a;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #UploadRecipe {
@@ -113,5 +115,5 @@
     margin-bottom: 650px;
     font-weight: 800;
     margin-right: 450px;
+    cursor: pointer;
 }
-
