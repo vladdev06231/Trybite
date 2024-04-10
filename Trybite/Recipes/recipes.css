@@ -26,7 +26,7 @@
     background-color: white;
     border: #aae19c 8px solid;
     color: #2A2B2E;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
     margin: 17px;
     border-radius: 20px;
     min-height: 750px;
@@ -85,13 +85,9 @@
 
 
 .recipes .recipeCard .recipeCardDate {
-    bottom: 0;
-    position: absolute;
     width: 45px;
-    font-size: 2em;
     display: flex;
     justify-content: left;
-    align-items: center;
 }
 
 .recipes .recipeCard .recipeCardInteract {
@@ -118,8 +114,20 @@
     vertical-align: middle;
 }
 
-.meta-batonai {
-    filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(87deg) brightness(119%) contrast(119%);
+.recipes .recipeCard #viewIcon {
+    filter: invert(7%) sepia(11%) saturate(2977%) hue-rotate(169deg) brightness(93%) contrast(101%);
+}
+
+.recipes .recipeCard #likeIcon {
+    filter: invert(47%) sepia(51%) saturate(539%) hue-rotate(84deg) brightness(103%) contrast(97%);
+}
+
+.recipes .recipeCard #dislikeIcon {
+    filter: invert(35%) sepia(97%) saturate(3798%) hue-rotate(345deg) brightness(93%) contrast(102%);;
+}
+
+.recipes .recipeCard .recipeCardStatistics {
+    font-weight: 660;
 }
 
 #UploadRecipe {

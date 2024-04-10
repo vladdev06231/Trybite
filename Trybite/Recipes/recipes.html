@@ -24,26 +24,27 @@
     <button id="UploadRecipe">Upload a recipe g </ion-icon></button>
 <div class="recipes">
     <div class="recipeCard">
+        <p style="text-align: center; position: relative; top: -50px;">fdgfdgfdg</p>
         <div class="recipeCard2">
         <button class="recipeCardInteract"><img src="../images/threedots.svg" width="60" alt="" class="recipeCardInteractSvg"></button>
         <p class="recipeCardAuthor">Recipe author</p>
         </div>
         <p class="recipeCardName">Strawberry cake</p>
-        <p class="recipeCardDecription">Delicious, easy to make strawbery cake for 3 people</p>
+        <p class="recipeCardDecription">Delicious, easy to make strawberry cake for 3 people</p>
 
         <div class="recipeCardTime">
             <img src="../images/clock.svg" width="30" alt="">
-                Time to make: 50min
+            Time to make: <span class="recipeCardStatistics">50 min</span>
         </div>
         <div class="recipeCardCost">
             <img src="../images/money.svg" width="30" alt="">
-                Cost to make: 7eur
+                Cost to make: <span class="recipeCardStatistics">7 eur</span>
         </div>
         <img src="strawberrycake.jpg" class="recipeCardImage">
         <div class="recipeCardStats">
-            <div class="recipeCardViews"><img src="../images/views.svg" width="30" alt="" class="meta-batonai"> Views</div>
-            <div class="recipeCardLikes"><img src="../images/like.svg" width="30" alt="" class="meta-batonai"> Likes</div>
-            <div class="recipeCardDislikes"><img src="../images/dislike.svg" width="30" alt="" class="meta-batonai"> Dislikes</div>
+            <div class="recipeCardStatistics"><img src="../images/views.svg" width="30" alt="" id="viewIcon"> 50</div>
+            <div class="recipeCardStatistics"><img src="../images/up-arrow.svg" width="30" alt="" id="likeIcon"> 12</div>
+            <div class="recipeCardStatistics"><img src="../images/down-arrow.svg" width="30" alt="" id="dislikeIcon"> 3</div>
         </div>
         <p class="recipeCardRating">Rating</p>
         <p class="recipeCardCategory">Category</p>
