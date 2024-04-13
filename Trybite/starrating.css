@@ -20,8 +20,6 @@ html,body{
   border: 1px solid #444;
   border-radius: 5px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 .container .post{
@@ -29,7 +27,7 @@ html,body{
 }
 .container .text{
   font-size: 25px;
-  color: #666;
+  color: #665;
   font-weight: 500;
 }
 .container .edit{
@@ -37,7 +35,7 @@ html,body{
   right: 10px;
   top: 5px;
   font-size: 16px;
-  color: #666;
+  color: #666566;
   font-weight: 500;
   cursor: pointer;
 }

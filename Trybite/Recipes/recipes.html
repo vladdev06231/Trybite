@@ -1,9 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>Recipes</title>
     <link rel="stylesheet" href="recipes.css">
-    <link rel="stylesheet" href="navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,46 +11,56 @@
 </head>
 <body>
     <header class="header">
-        <a href="#" class="logo">Logo</a>
-
+        <a href="#" class="logo">Trybite</a>
         <nav class="navbar">
             <a href="index.html">Home</a>
-            <a href="Food_order.html">Food Order</a>
             <a href="Rating.html">Rating</a>
             <button class="btnLogin-popup">Login</button>
+            <button class="recipeCreate"><img src="../icons/recipe-icons/recipe-new.svg" width="65" alt="" class="recipeNewIcon"></button>
         </nav>
     </header>
-    <button id="UploadRecipe">Upload a recipe g </ion-icon></button>
-<div class="recipes">
-    <div class="recipeCard">
-        <p style="text-align: center; position: relative; top: -50px;">fdgfdgfdg</p>
-        <div class="recipeCard2">
-        <button class="recipeCardInteract"><img src="../images/threedots.svg" width="60" alt="" class="recipeCardInteractSvg"></button>
-        <p class="recipeCardAuthor">Recipe author</p>
-        </div>
-        <p class="recipeCardName">Strawberry cake</p>
-        <p class="recipeCardDecription">Delicious, easy to make strawberry cake for 3 people</p>
+<div class="wrapper">
+    
+    <p class="recipesGreeting">Welcome to Trybite's recipes! <span class="recipesGreeting">(Page #1)</span></p>
+    <div class="recipes">
+        <div class="recipeCard">
+            <p style="text-align: center; position: relative; top: -50px;">fdgfdgfdg</p>
+            <div class="recipeCardTop">
+            <button class="recipeCardMenu"><img src="../icons/recipe-icons/recipe-menu.svg" width="60" alt="" class="recipeCardMenuIcon"></button>
+            <p class="recipeCardAuthor">Snipe</p>
+            </div>
 
-        <div class="recipeCardTime">
-            <img src="../images/clock.svg" width="30" alt="">
-            Time to make: <span class="recipeCardStatistics">50 min</span>
+            <p class="recipeCardName">Strawberry cake</p>
+            <p class="recipeCardDecription">Delicious, easy to make strawberry cake for 3 people</p>
+
+            <div class="recipeCardTimeToMake">
+                <img src="../icons/recipe-icons/recipe-time.svg" width="30" alt="">
+                Time to make: <span class="recipeCardStatistics">50 min</span>
+            </div>
+
+            <div class="recipeCardCostToMake">
+                <img src="../icons/recipe-icons/recipe-cost.svg" width="30" alt="">
+                    Cost to make: <span class="recipeCardStatistics">7 eur</span>
+            </div>
+
+            <img src="strawberrycake.jpg" class="recipeCardFoodImg">
+
+            <div class="recipeCardStats">
+                <div class="recipeCardStatistics"><img src="../icons/recipe-icons/recipe-view.svg" width="30" alt="" id="viewIcon"> 50</div>
+                <div class="recipeCardStatistics"><img src="../icons/recipe-icons/recipe-like.svg" width="30" alt="" id="likeIcon"> 12</div>
+                <div class="recipeCardStatistics"><img src="../icons/recipe-icons/recipe-dislike.svg" width="30" alt="" id="dislikeIcon"> 3</div>
+            </div>
+            <p class="recipeCardRating">Rating (4.5): <span><img src="../icons/recipe-icons/recipe-fullstar.svg" width="40" id="eeee"></span></p>
+
+            <a href="recipe-check.html">
+            <button class="recipeCardCheck">Check out the recipe</button>
+            </a>
+    </div>
+    
         </div>
-        <div class="recipeCardCost">
-            <img src="../images/money.svg" width="30" alt="">
-                Cost to make: <span class="recipeCardStatistics">7 eur</span>
-        </div>
-        <img src="strawberrycake.jpg" class="recipeCardImage">
-        <div class="recipeCardStats">
-            <div class="recipeCardStatistics"><img src="../images/views.svg" width="30" alt="" id="viewIcon"> 50</div>
-            <div class="recipeCardStatistics"><img src="../images/up-arrow.svg" width="30" alt="" id="likeIcon"> 12</div>
-            <div class="recipeCardStatistics"><img src="../images/down-arrow.svg" width="30" alt="" id="dislikeIcon"> 3</div>
-        </div>
-        <p class="recipeCardRating">Rating</p>
-        <p class="recipeCardCategory">Category</p>
-        <p class="recipeCardDate">Date</p>
-</div>
 </div>
 <script src="recipes.js"></script>
+<script src="../reputation.js"></script>
 
 </body>
 </html>
