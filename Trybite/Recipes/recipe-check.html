@@ -10,19 +10,54 @@
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="Rating.html">Rating</a>
-            <button class="btnLogin-popup">Login</button>
+            <button class="btnLogin-popup"><img src="../icons/profile-icons/user.png" width="55" alt="" class="accountPfp"></button>
+
+            <div class="sub-menu-wrap">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="../icons/profile-icons/user.png" id="profilePicture">
+                        <p id="username">Snipe</p>
+                    </div>
+                    <hr>
+
+                    <a href="" class="sub-menu-link">
+                        <img src="../icons/profile-icons/profile.png">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <img src="../icons/profile-icons/setting.png">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <img src="../icons/profile-icons/help.png">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="" class="sub-menu-link">
+                        <img src="../icons/profile-icons/logout.png">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                    
+
+                </div>
+            </div>
+
         </nav>
     </header>
 <div class="wrapper">
-    <span><img src="../icons/recipe-icons/recipe-backarrow.svg" width="30" alt="" id="viewIcon"></span>
-    <p>Strawberry cake</p>
-    <p>Delicious, easy to make strawberry cake for 3 people</p>
+    <a href="recipes.html">
+    <button class="closeRecipeBtn"><img src="../icons/recipe-icons/recipe-backarrow.svg" width="60" alt="" class="closeRecipeIcon"> Close</button>
+    </a>
+    <p class="recipeName">Strawberry cake</p>
+    <p class="recipeDescription">Delicious, easy to make strawberry cake for 3 people</p>
     <img src="strawberrycake.jpg" class="recipeCheckImg">
     <img src="strawberrycake.jpg" class="recipeCheckImg">
     <img src="strawberrycake.jpg" class="recipeCheckImg">
-
-    <p>Ingrendients:</p>
-    <ol>
+    <p class="ingrendientsLabel">Ingrendients:</p>
+    <ol class="ingrendientsList">
         <li>Water</li>
         <li>Flour</li>
         <li>Sugar</li>
@@ -30,16 +65,16 @@
         <li>Strawberries</li>
     </ol>
 
-    <p>Equipment:</p>
-    <ol>
+    <p class="equipmentLabel">Equipment:</p>
+    <ol class="equipmentList">
         <li>Oven</li>
         <li>Knife</li>
         <li>Mixer</li>
         <li>Bowl</li>
     </ol>
 
-    <p>Instructions:</p>
-    <ol>
+    <p class="instructionsLabel">Instructions:</p>
+    <ol class="instructions">
         <li>Put flour in the bowl</li>
         <li>Slowly pour in water while mixing everything together</li>
         <li>Add 4 cups of sugar</li>
@@ -47,15 +82,16 @@
         <li>Bake in the oven</li>
         <li>Cut your strawberriess</li>
         <li>Sprinkle them on your baked cake</li>
-        <li>This recipe was posted on: 2024/04/13</li>
     </ol>
+    <p class="recipeDate">This recipe was posted on: 2024/04/13</p>
 
-    <p>Rate the recipe:</p>
-    <button><img src="../icons/recipe-icons/recipe-like.svg" width="30" alt="" id="likeIcon"></button>
-    <button><img src="../icons/recipe-icons/recipe-dislike.svg" width="30" alt="" id="likeIcon"></button>
 
-    <p>Leave a review:</p>
-</div>
-    
+    <div class="ratingElements">
+    <p class="ratingLabel">Rate the recipe:</p>
+    <button class="likeBtn"><img src="../icons/recipe-icons/recipe-like.svg" width="30" alt="" class="likeIcon"></div></button>
+    <button class="dislikeBtn"><img src="../icons/recipe-icons/recipe-dislike.svg" width="30" alt="" class="dislikeIcon"></div></button>
+    </div>
+    <script src="recipe-check.js"></script>
+
 </body>
 </html>
