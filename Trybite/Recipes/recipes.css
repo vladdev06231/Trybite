@@ -134,6 +134,17 @@ font-family: "Poppins", sans-serif;
     width: 470px;
 }
 
+.recipeCardTop1 {
+    display: flex;
+    padding: 15px 0;
+    gap: 15px;
+    align-items: center;
+}
+
+.recipeCardTop2 {
+    display: flex;
+}
+
 .recipes .recipeCard .recipeCardAuthor {
     font-size: 15px;
 }

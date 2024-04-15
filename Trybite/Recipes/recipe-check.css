@@ -44,6 +44,7 @@ body {
     justify-content: space-between;
     align-items: center;
     font-family: "Poppins", sans-serif;
+    z-index: 100;
 }
 
 .logo {
@@ -92,16 +93,25 @@ body {
 
 .sub-menu-wrap {
     position: absolute;
-    top: 100%;
-    right: 10%;
+    top: 70%;
+    right: 5%;
     width: 320px;
-    font-weight: 350
+    font-weight: 350;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s;
+    border-radius: 15px;
+}
+
+.sub-menu-wrap.open-menu {
+    max-height: 400px;
 }
 
 .sub-menu {
     background: #fff;
     padding: 20px;
     margin: 10px;
+    border-radius: 15px;
 }
 
 .user-info {
@@ -206,6 +216,7 @@ margin: 0;
 
 .closeRecipeIcon {
     filter: invert(70%) sepia(59%) saturate(3396%) hue-rotate(313deg) brightness(102%) contrast(104%);
+    vertical-align: middle;
 }
 
 .closeRecipeBtn {
@@ -214,8 +225,9 @@ margin: 0;
     border: 1px #162938;
     font-family: "Fredoka-one", sans-serif;
     color: #ff7979;
-    font-size: 2em;
+    font-size: 1.2em;
     cursor: pointer;
+
 }
 
 .recipeName {

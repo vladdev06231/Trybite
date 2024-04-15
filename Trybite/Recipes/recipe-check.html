@@ -10,9 +10,9 @@
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="Rating.html">Rating</a>
-            <button class="btnLogin-popup"><img src="../icons/profile-icons/user.png" width="55" alt="" class="accountPfp"></button>
+                <button class="btnLogin-popup"><img src="../icons/profile-icons/user.png" width="55" alt="" class="accountPfp" onclick="toggleMenu()" width="20"></button>
 
-            <div class="sub-menu-wrap">
+            <div class="sub-menu-wrap" id="subMenu">
                 <div class="sub-menu">
                     <div class="user-info">
                         <img src="../icons/profile-icons/user.png" id="profilePicture">
@@ -49,7 +49,7 @@
     </header>
 <div class="wrapper">
     <a href="recipes.html">
-    <button class="closeRecipeBtn"><img src="../icons/recipe-icons/recipe-backarrow.svg" width="60" alt="" class="closeRecipeIcon"> Close</button>
+    <button class="closeRecipeBtn"><img src="../icons/recipe-icons/recipe-backarrow.svg" width="30" alt="" class="closeRecipeIcon"> Close</button>
     </a>
     <p class="recipeName">Strawberry cake</p>
     <p class="recipeDescription">Delicious, easy to make strawberry cake for 3 people</p>
@@ -92,6 +92,13 @@
     <button class="dislikeBtn"><img src="../icons/recipe-icons/recipe-dislike.svg" width="30" alt="" class="dislikeIcon"></div></button>
     </div>
     <script src="recipe-check.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu")
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
 
 </body>
 </html>
