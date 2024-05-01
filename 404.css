@@ -1,0 +1,27 @@
+
+/* Fonts install */
+@font-face {
+    font-family: Varela;
+    src: url("../fonts/VarelaRound-Regular.ttf");
+}
+
+@font-face {
+    font-family: Fredoka-one;
+    src: url("../fonts/FredokaOne.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans.ttf);
+}
+body {
+    margin: ;
+}
+#ErrorPageTitle {
+    font-size: 40px;
+}
