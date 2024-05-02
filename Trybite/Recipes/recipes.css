@@ -208,7 +208,7 @@ font-family: "Poppins", sans-serif;
     padding: 0 15px 0 15px;
 }
 
-.recipes .recipeCard .recipeCardMenu {
+.recipes .recipeCard .recipeCardInteract {
     background-color: #131313;
     height: 50px;
     width: 50px;
@@ -220,7 +220,7 @@ font-family: "Poppins", sans-serif;
     border: none;
 }
 
-.recipes .recipeCard .recipeCardMenuIcon {
+.recipes .recipeCard .recipeCardInteractIcon {
     align-items: center;
     vertical-align: middle;
     filter: invert(97%) sepia(100%) saturate(13%) hue-rotate(250deg) brightness(104%) contrast(104%);

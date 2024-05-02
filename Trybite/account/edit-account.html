@@ -1,25 +1,162 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="edit-account.css">
 </head>
+
 <body>
     <div class="wrapper">
+        <p id="previewLabel" class="mainLabel">Preview profile</p>
 
-        <p>Update your profile picture:</p>
-        <img src="../icons/profile-icons/user.png">
-        <button>Upload new</button></button>Select from gallery</button>
+        <div id="profilePreview">
+            <div id="previewTop">
+                <img src="../icons/profile-icons/user.png" width="110" id="pfpImg">
+                <div id="previewNames">
+                    <p id="previewDisplayName">Snipe</p>
+                    <p id="previewUsername">@SuperSnipe2024</p>
+                </div>
+            </div>
+            <p>I upload a lot of cool recipes to Trybite. Follow for a cookie 🍪</p>
+        </div>
 
-        <p>Change your user/display name: </p>
+        <p id="editLabel" class="mainLabel">Edit your profile:</p>
 
-        <label class="nameLabel" for="displayname">Display name:</label>
-        <p id="displayname">Snipe</p>
-        <button id="displayNameBtn">Change display name</button>
+        <hr class="hrSeperator">
+        <p id="pfpLabel" class="mainLabel">Update your profile picture/banner:</p>
 
-        <label class="nameLabel"  for="username">Username:</label>
-        <p id="username">Snipe</p>
-        <button id="usernameBtn">Change username</button>
+    <div id="decorationWrapper">
+            <div id="changePfp">
+            <p class="nameLabel">Profile picture:</p>
+            <img src="../icons/profile-icons/user.png" width="110" id="pfpImg">
+            <p>
+            <button id="pfpNew" class="pfpBtn">Upload new</button>
+            <button id="pfpGallery" class="pfpBtn">Select from gallery</button>
+            </p>
+            </div>
+
+            <div id="changeBanner">
+                <p class="nameLabel">Banner picture:</p>
+                <img src="../icons/profile-icons/user.png" width="110" id="pfpImg">
+                <p>
+                <button id="bannerNew" class="bannerBtn">Upload new</button>
+                <button id="bannerGallery" class="bannerBtn">Select from gallery</button>
+                </p>
+            </div>
     </div>
+
+        <hr class="hrSeperator">
+        <p id="nameLabel" class="mainLabel">Change your user/display name: </p>
+
+        <div id="nameWrapper">
+            <div id="changeDisplayName">
+            <p class="nameLabel">Display name:</p>
+            <p id="displayname" class="name">Snipe</p>
+            <button id="displayNameBtn" onclick="myFunction()">Change display name</button>
+            </div>
+            
+            <div id="changeUsername">
+            <p class="nameLabel">Username:</p>
+            <p id="username" class="name">SuperSnipe2024</p>
+            <button id="usernameBtn">Change username</button>
+            </div>
+        </div>
+
+        <hr class="hrSeperator">
+        <p id="nameLabel" class="mainLabel">Change your description: </p>
+
+        <div id="descriptionWrapper">
+            <div id="changeDescription">
+            <p class="nameLabel">Description:</p>
+            <p id="description" class="name">I upload a lot of cool recipes to Trybite. Follow for a cookie 🍪</p>
+            <button id="descriptionBtn">Change description</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="changeDnPopup">
+        <div id="changeDnPopupTop"></div>
+        <p id="changeDnPopupLabel">Change your display name:</p>
+        <hr class="hrSeperator">
+        <input  id="changeDnPopupInput" placeholder="Snipe">
+        <p  id="changeDnPopupCurrent">Current display name: <span id="changeDnPopupCurrentName">Snipe</span></p>
+        <hr class="hrSeperator">
+        <div class="changeDnPopupBtns">
+            <button id="changeDnPopupApply">Apply changes</button>
+            <button id="changeDnPopupDiscard">Discard changes</button>
+        </div>
+        <p id="changeDnPopupWarn"><span><img src="../icons/profile-icons/warning.svg"></span>  WARNING! Display names can be changed once every 7 days!</p>
+        <div id="changeDnPopupBottom"></div>
+    </div>
+
+    <div class="changeUsPopup">
+        <div id="changeUsPopupTop"></div>
+        <p id="changeUsPopupLabel">Change your username:</p>
+        <hr class="hrSeperator">
+        <input  id="changeUsPopupInput" placeholder="Snipe">
+        <p  id="changeUsPopupCurrent">Current username: <span id="changeDnPopupCurrentName">Snipe</span></p>
+        <hr class="hrSeperator">
+        <div class="changeUsPopupBtns">
+            <button id="changeUsPopupApply">Apply changes</button>
+            <button id="changeUsPopupDiscard">Discard changes</button>
+        </div>
+        <p id="changeUsPopupWarn"><span><img src="../icons/profile-icons/warning.svg"></span>  WARNING! Display names can be changed once every 30 days!</p>
+        <div id="changeUsPopupBottom"></div>
+    </div>
+
+    <div class="changeDescPopup">
+        <div id="changeDescPopupTop"></div>
+        <p id="changeDescPopupLabel">Change your description:</p>
+        <hr class="hrSeperator">
+        <input  id="changeDescPopupInput" placeholder="I upload a lot of cool recipes to Trybite. Follow for a cookie 🍪">
+        <p  id="changeDescPopupCurrent">Current description: <span id="changeDnPopupCurrentName">I upload a lot of cool recipes to Trybite. Follow for a cookie 🍪</span></p>
+        <hr class="hrSeperator">
+        <div class="changeDescPopupBtns">
+            <button id="changeDescPopupApply">Apply changes</button>
+            <button id="changeDescPopupDiscard">Discard changes</button>
+        </div>
+        <p id="changeDescPopupWarn"><span><img src="../icons/profile-icons/warning.svg"></span>  WARNING! Display names can be changed once every 30 days!</p>
+        <div id="changeDescPopupBottom"></div>
+    </div>
+
+    <div class="changePfpPopup">
+        <div id="changePfpPopupTop"></div>
+        <p id="changePfpPopupLabel">Change your profile picture:</p>
+        <hr class="hrSeperator">
+        <img src="../icons/profile-icons/user.png" width="110" id="pfpImg">
+        <p  id="changePfpPopupCurrent">Current description: <span id="changeDnPopupCurrentName">I upload a lot of cool recipes to Trybite. Follow for a cookie 🍪</span></p>
+        <hr class="hrSeperator">
+        <div class="changePfpPopupBtns">
+            <button id="changePfpPopupApply">Apply changes</button>
+            <button id="changePfpPopupDiscard">Discard changes</button>
+        </div>
+        <p id="changePfpPopupWarn"><span><img src="../icons/profile-icons/warning.svg"></span>  WARNING! Display names can be changed once every 30 days!</p>
+        <div id="changePfpPopupBottom"></div>
+    </div>
+
+    <div class="changeBannerPopup">
+        <div id="changeBannerPopupTop"></div>
+        <p id="changeBannerPopupLabel">Change your description:</p>
+        <hr class="hrSeperator">
+        <input  id="changeBannerPopupInput" placeholder="I upload a lot of cool recipes to Trybite. Follow for a cookie 🍪">
+        <p  id="changeBannerPopupCurrent">Current description: <span id="changeDnPopupCurrentName">I upload a lot of cool recipes to Trybite. Follow for a cookie 🍪</span></p>
+        <hr class="hrSeperator">
+        <div class="changeBannerPopupBtns">
+            <button id="changeBannerPopupApply">Apply changes</button>
+            <button id="changeBannerPopupDiscard">Discard changes</button>
+        </div>
+        <p id="changeBannerPopupWarn"><span><img src="../icons/profile-icons/warning.svg"></span>  WARNING! Display names can be changed once every 30 days!</p>
+        <div id="changeBannerPopupBottom"></div>
+    </div>
+    <script>
+        function myFunction() {
+           var element = document.getElementById("changeDnPopup");
+           element.classList.toggle("test123");
+        }
+        </script>
 </body>
+
 </html>

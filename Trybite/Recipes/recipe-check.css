@@ -260,7 +260,7 @@ margin: 0;
 .ingrendientsLabel {
     font-family: "Poppins", sans-serif;
     font-weight: 680;
-    font-size: 35px;
+    font-size: 20px;
     display: flex;
 }
 
@@ -272,7 +272,7 @@ margin: 0;
 .equipmentLabel {
     font-family: "Poppins", sans-serif;
     font-weight: 680;
-    font-size: 35px;
+    font-size: 20px;
     display: flex;
 }
 
@@ -284,7 +284,7 @@ margin: 0;
 .instructionsLabel {
     font-family: "Poppins", sans-serif;
     font-weight: 680;
-    font-size: 35px;
+    font-size: 20px;
     display: flex;
 }
 
@@ -295,9 +295,26 @@ margin: 0;
 
 .ratingLabel {
     font-family: "Poppins", sans-serif;
-    font-weight: 680;
-    font-size: 35px;
+    font-weight: 640;
+    font-size: 30px;
     display: flex;
+    margin-bottom: 2px;
+}
+
+.leaveReviewLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 640;
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 2px;
+}
+
+.checkReviewLabel {
+    font-family: "Poppins", sans-serif;
+    font-weight: 640;
+    font-size: 30px;
+    display: flex;
+    margin-bottom: 2px;
 }
 
 .ratingElements{
@@ -305,12 +322,24 @@ margin: 0;
 }
 
 .likeBtn {
-    background-color: #162938;
+    background-color: #27343b;
     border: 0px;
+    border-radius: 4px;
 }
 
 .dislikeBtn {
-    background-color: #162938;
+    background-color: #27343b;
+    border: 0px;
+    border-radius: 4px;
+}
+
+.reviewDislikeBtn {
+    background-color: #27343b;
+    border: 0px;
+}
+
+.reviewLikeBtn {
+    background-color: #27343b;
     border: 0px;
 }
 
@@ -332,4 +361,105 @@ margin: 0;
     margin: 7px 0 13px 0;
     font-size: 18px;
     color: #a8a8a8;
+}
+
+.ratingButtons {
+    display: flex;
+    margin-right: 850px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+#likeCounter {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0 10px 0 10px;
+    margin-right: 6px;
+}
+
+#dislikeCounter {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 6px;
+}
+
+#reviewLikeCounter {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin: 0 10px 0 10px;
+    margin-right: 6px;
+}
+
+#reviewDislikeCounter {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 6px;
+}
+
+
+.likeBtn {
+    margin-right: 15px;
+}
+
+#reviewTop {
+    display: flex;
+    margin-bottom: 8px;
+    gap: 8px;
+    background-color: #29353f;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 5px;
+}
+
+#reviewCard {
+    background-color: #354552;
+    width: 100%;
+    border-radius: 4px;
+    font-family: "OpenSans", sans-serif;
+    width: 50%;
+}
+
+#reviewInteract {
+    right: 0;
+}
+
+#reviewAuthor {
+    font-weight: 650;
+}
+
+#reviewStars {
+    margin-right: 54%;
+}
+
+#reviewInteract {
+    background-color: #131313;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    float: right;
+    padding: 4px;
+    border: none;
+    width: 32px;
+    height: 32px;
+}
+
+#reviewIcon {
+    align-items: center;
+    vertical-align: middle;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(108deg) brightness(104%) contrast(104%);
+}
+
+#reviewComment {
+    padding: 2px 5px 10px 5px;
+}
+
+#reviewBottom {
+    background-color: #27343b;
+    display: flex;
 }

@@ -1,0 +1,92 @@
+/* Fonts install */
+@font-face {
+    font-family: Varela;
+    src: url("../fonts/VarelaRound-Regular.ttf");
+}
+
+@font-face {
+    font-family: Fredoka-one;
+    src: url("../fonts/FredokaOne.ttf");
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans.ttf);
+}
+
+#shareRecipeCard {
+    background-color: #192229;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-family: "OpenSans", sans-serif;
+    width: 450px;
+    padding: 0;
+}
+
+.hrSeperator {
+    border: 1px #a9a9a9 solid;
+    text-align: center;
+    margin: 10px;
+}
+
+#shareRecipeCardTop {
+    background-color: #293844;
+    padding: 7px 12px 7px 12px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 45px;
+}
+
+#shareRecipeCardBottom {
+    background-color: #293844;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    height: 45px;
+}
+
+#shareRecipeCardTopTitle {
+    color: white;
+    font-weight: 750;
+    font-size: 30px;
+    margin: 0;
+}
+
+#shareRecipeSocialMedia {
+    display: flex;
+    margin: 10px 20px 5px 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#shareRecipeCopyLink {
+    display: flex;
+    background-color: #283742;
+    border-radius: 30px;
+    margin: 0 20px 15px 20px;
+}
+
+#shareRecipeType  {
+    margin-left: 10px;
+}
+
+#recipeShareCopyLinkBtn {
+    margin-left: 155px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4fb835;
+}
+
+#recipeShareCopyLinkImg {
+    border: none;
+    margin-right: 20px;
+}
+
+#shareRecipeLink {
+    margin-left: 20px;
+}

@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Document</title>
     <link rel="stylesheet" href="recipe-check.css">
 </head>
+
 <body>
     <header class="header">
         <a href="#" class="logo">Trybite</a>
         <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="Rating.html">Rating</a>
-                <button class="btnLogin-popup"><img src="../icons/profile-icons/user.png" width="55" alt="" class="accountPfp" onclick="toggleMenu()" width="20"></button>
+            <button class="btnLogin-popup"><img src="../icons/profile-icons/user.png" width="55" alt=""
+                    class="accountPfp" onclick="toggleMenu()" width="20"></button>
 
             <div class="sub-menu-wrap" id="subMenu">
                 <div class="sub-menu">
@@ -40,74 +43,111 @@
                         <p>Logout</p>
                         <span>></span>
                     </a>
-                    
+
 
                 </div>
             </div>
 
         </nav>
     </header>
-<div class="wrapper">
-    <a href="recipes.html">
-    <button class="closeRecipeBtn"><img src="../icons/recipe-icons/recipe-backarrow.svg" width="30" alt="" class="closeRecipeIcon"> Close</button>
-    </a>
-    <p class="recipeName">Strawberry cake</p>
-    <p class="recipeDescription">Delicious, easy to make strawberry cake for 3 people</p>
-    <img src="strawberrycake.jpg" class="recipeCheckImg">
-    <img src="strawberrycake.jpg" class="recipeCheckImg">
-    <img src="strawberrycake.jpg" class="recipeCheckImg">
-    <hr class="hrSeperator">
-    <p class="ingrendientsLabel">Ingrendients:</p>
-    <ol class="ingrendientsList">
-        <li>Water</li>
-        <li>Flour</li>
-        <li>Sugar</li>
-        <li>Eggs</li>
-        <li>Strawberries</li>
-    </ol>
+    <div class="wrapper">
+        <a href="recipes.html">
+            <button class="closeRecipeBtn"><img src="../icons/recipe-icons/recipe-backarrow.svg" width="30" alt=""
+                    class="closeRecipeIcon"> Close</button>
+        </a>
+        <p class="recipeName">Strawberry cake</p>
+        <p class="recipeDescription">Delicious, easy to make strawberry cake for 3 people</p>
+        <img src="strawberrycake.jpg" class="recipeCheckImg">
+        <img src="strawberrycake.jpg" class="recipeCheckImg">
+        <img src="strawberrycake.jpg" class="recipeCheckImg">
+        <hr class="hrSeperator">
+        <p class="ingrendientsLabel">Ingrendients:</p>
+        <ol class="ingrendientsList">
+            <li>Water</li>
+            <li>Flour</li>
+            <li>Sugar</li>
+            <li>Eggs</li>
+            <li>Strawberries</li>
+        </ol>
 
-    <hr class="hrSeperator">
+        <hr class="hrSeperator">
 
-    <p class="equipmentLabel">Equipment:</p>
-    <ol class="equipmentList">
-        <li>Oven</li>
-        <li>Knife</li>
-        <li>Mixer</li>
-        <li>Bowl</li>
-    </ol>
+        <p class="equipmentLabel">Equipment:</p>
+        <ol class="equipmentList">
+            <li>Oven</li>
+            <li>Knife</li>
+            <li>Mixer</li>
+            <li>Bowl</li>
+        </ol>
 
-    <hr class="hrSeperator">
+        <hr class="hrSeperator">
 
-    <p class="instructionsLabel">Instructions:</p>
-    <ol class="instructions">
-        <li>Put flour in the bowl</li>
-        <li>Slowly pour in water while mixing everything together</li>
-        <li>Add 4 cups of sugar</li>
-        <li>Crack in 2 eggs</li>
-        <li>Bake in the oven</li>
-        <li>Cut your strawberriess</li>
-        <li>Sprinkle them on your baked cake</li>
-    </ol>
+        <p class="instructionsLabel">Instructions:</p>
+        <ol class="instructions">
+            <li>Put flour in the bowl</li>
+            <li>Slowly pour in water while mixing everything together</li>
+            <li>Add 4 cups of sugar</li>
+            <li>Crack in 2 eggs</li>
+            <li>Bake in the oven</li>
+            <li>Cut your strawberriess</li>
+            <li>Sprinkle them on your baked cake</li>
+        </ol>
 
-    <hr class="hrSeperator">
+        <p class="recipeDate">This recipe was posted on: 2024/04/13</p>
 
-    <p class="recipeDate">This recipe was posted on: 2024/04/13</p>
+        <hr class="hrSeperator">
 
 
-    <div class="ratingElements">
-    <p class="ratingLabel">Rate the recipe:</p>
-        <div>
-            <button class="likeBtn"><img src="../icons/recipe-icons/recipe-like.svg" width="30" alt="" class="likeIcon"></button>
-            <button class="dislikeBtn"><img src="../icons/recipe-icons/recipe-dislike.svg" width="30" alt="" class="dislikeIcon"></button>
-        </div>
-    <script src="recipe-check.js"></script>
-    <script>
-        let subMenu = document.getElementById("subMenu")
+        <div class="ratingElements">
+            <p class="ratingLabel">Rate the recipe:</p>
+            <div class="ratingButtons">
+                <p id="likeCounter">12</p>
+                <button class="likeBtn"><img src="../icons/recipe-icons/recipe-like.svg" width="30" alt=""
+                        class="likeIcon"></button>
+                <button class="dislikeBtn"><img src="../icons/recipe-icons/recipe-dislike.svg" width="30" alt=""
+                        class="dislikeIcon"></button>
+                <p id="dislikeCounter">3</p>
+            </div>
 
-        function toggleMenu() {
-            subMenu.classList.toggle("open-menu");
-        }
-    </script>
+            <hr class="hrSeperator">
+            <div class="leaveReviewElements">
+                <p class="leaveReviewLabel">Leave a review:</p>
+            </div>
+
+            <hr class="hrSeperator">
+
+            <div class="ReviewElements">
+                <p class="checkReviewLabel">Reviews (4):</p>
+                <div id="reviews">
+                    <div id="reviewCard">
+                        <div id="reviewTop">
+                        <img src="../icons/profile-icons/user.png" width="30" id="reviewPfp">
+                        <p id="reviewAuthor">Snipe</p>
+                        <p id="reviewStars">⭐⭐⭐⭐⭐</p>
+                        <button id="reviewInteract"><img src="../icons/recipe-icons/recipe-menu.svg" alt="" id="reviewIcon"></button>
+                        </div>
+                        <p id="reviewComment">Really tasty, easy to make recipe. You barely need any ingrendients, 100% recommend it!</p>
+                        <div id="reviewBottom">
+                        <p id="reviewLikeCounter">2</p>
+                        <button class="reviewLikeBtn"><img src="../icons/recipe-icons/recipe-like.svg" width="30" alt=""class="likeIcon"></button>
+                        <button class="reviewDislikeBtn"><img src="../icons/recipe-icons/recipe-dislike.svg" width="30" alt="" class="dislikeIcon"></button>
+                        <p id="reviewDislikeCounter">1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="reviewInteractMenu">
+                <p>Share the recipe<span></span></p>
+            </div>
+            <script src="recipe-check.js"></script>
+            <script>
+                let subMenu = document.getElementById("subMenu")
+
+                function toggleMenu() {
+                    subMenu.classList.toggle("open-menu");
+                }
+            </script>
 
 </body>
+
 </html>
