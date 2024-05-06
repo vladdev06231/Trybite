@@ -40,20 +40,20 @@
     padding: 7px 12px 7px 12px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    height: 45px;
+    height: 38px;
 }
 
 #shareRecipeCardBottom {
     background-color: #293844;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    height: 45px;
+    height: 20px;
 }
 
 #shareRecipeCardTopTitle {
     color: white;
     font-weight: 750;
-    font-size: 30px;
+    font-size: 20px;
     margin: 0;
 }
 
