@@ -7,18 +7,13 @@
 }
 
 @font-face {
-    font-family: Fredoka-one;
-    src: url("../fonts/FredokaOne.ttf");
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(../fonts/Poppins-Bold.ttf);
-}
-
-@font-face {
     font-family: OpenSans;
-    src: url(../fonts/OpenSans.ttf);
+    src: url(../../fonts/OpenSans.ttf);
+}
+
+@font-face {
+    font-family: AlbertSans;
+    src: url(../../fonts/AlbertSans.ttf);
 }
 
 body {
@@ -229,7 +224,7 @@ margin: 0;
     background: none;
     border-radius: 5px;
     border: 1px #162938;
-    font-family: "Fredoka-one", sans-serif;
+    font-family: "AlbertSans", sans-serif;
     color: #ff7979;
     font-size: 1.2em;
     cursor: pointer;
@@ -246,7 +241,7 @@ margin: 0;
 
 .recipeDescription {
     font-weight: 500;
-    font-family: "Fredoka-one", sans-serif;
+    font-family: "AlbertSans", sans-serif;
     font-size: 2em;
     text-align: center;
     margin-bottom: 40px;
@@ -265,7 +260,7 @@ margin: 0;
 }
 
 .ingrendientsList {
-    font-family: "Fredoka-one", sans-serif;
+    font-family: "AlbertSans", sans-serif;
     font-size: 20px;
 }
 
@@ -277,7 +272,7 @@ margin: 0;
 }
 
 .equipmentList {
-    font-family: "Fredoka-one", sans-serif;
+    font-family: "AlbertSans", sans-serif;
     font-size: 20px;
 }
 
@@ -289,7 +284,7 @@ margin: 0;
 }
 
 .instructions {
-    font-family: "Fredoka-one", sans-serif;
+    font-family: "AlbertSans", sans-serif;
     font-size: 20px;
 }
 
@@ -356,7 +351,7 @@ margin: 0;
 }
 
 .recipeDate {
-    font-family: "Fredoka-one", sans-serif;
+    font-family: "AlbertSans", sans-serif;
     font-weight: 350;
     margin: 7px 0 13px 0;
     font-size: 18px;

@@ -35,14 +35,28 @@ body {
 
 #profilePreview {
     color: white;
+    background-color: rgb(33, 41, 48);
+    padding: 5px;
+    border-radius: 8px;
+    margin: 0 30px 0 30px;
 }
 
-#previewTop {
+#profilePreviewTop {
     display: flex;
 }
 
-#previewDisplayName {
+#profilePreviewNames {
+    margin: 0 0 0 20px;
+    text-align: left;
+}
+
+#profilePreviewDisplayName {
     font-size: 25px;
+    margin: 0;
+}
+
+#profilePreviewUsername {
+    margin: 0;
 }
 
 #editLabel {
