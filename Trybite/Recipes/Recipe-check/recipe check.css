@@ -2,18 +2,23 @@
 
 /* Fonts install */
 @font-face {
+    font-family: VarelaRound;
+    src: url(../../Fonts/VarelaRound.ttf);
+}
+
+@font-face {
     font-family: Varela;
-    src: url("../fonts/VarelaRound-Regular.ttf");
+    src: url(../../Fonts/Varela.ttf);
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url(../../fonts/OpenSans.ttf);
+    src: url(##/##/Fonts/OpenSans#ttf);
 }
 
 @font-face {
     font-family: AlbertSans;
-    src: url(../../fonts/AlbertSans.ttf);
+    src: url(##/##/Fonts/AlbertSans#ttf);
 }
 
 body {
@@ -23,12 +28,12 @@ body {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url(images/food-background.jpg)
+    background-image: url(images/food-background#jpg)
 }
 
 /* Navigation bar */
 
-.header {
+#header {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,14 +47,14 @@ body {
     z-index: 100;
 }
 
-.logo {
+#logo {
     font-size: 32px;
     color: white;
     text-decoration: none;
     font-weight: 700;
 }
 
-.navbar a {
+#navbar a {
     position: relative;
     font-size: 18px;
     color: #fff;
@@ -58,7 +63,7 @@ body {
     margin-left: 40px;
 }
 
-.navbar a::after {
+#navbar a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -71,11 +76,11 @@ body {
     transition: transform .15s;
 }
 
-.navbar a:hover::after {
+#navbar a:hover::after {
     transform: scaleX(1);
 }
 
-.navbar .btnLogin-popup {
+#navbar #btnLogin-popup {
     background: transparent;
     border: none;
     border-radius: 6px;
@@ -86,7 +91,7 @@ body {
     transition: .5s;
 }
 
-.sub-menu-wrap {
+#sub-menu-wrap {
     position: absolute;
     top: 70%;
     right: 5%;
@@ -98,34 +103,34 @@ body {
     border-radius: 15px;
 }
 
-.sub-menu-wrap.open-menu {
+#sub-menu-wrap#open-menu {
     max-height: 400px;
 }
 
-.sub-menu {
+#sub-menu {
     background: #fff;
     padding: 20px;
     margin: 10px;
     border-radius: 15px;
 }
 
-.user-info {
+#user-info {
     display: flex;
     align-items: center;
 }
 
-.user-info #username {
+#user-info #username {
     font-weight: 500;
     font-size: 25px;
 }
 
-.user-info #profilePicture {
+#user-info #profilePicture {
     width: 60px;
     border-radius: 50%;
     margin-right: 15px;
 }
 
-.sub-menu hr {
+#sub-menu hr {
     border: 0;
     height: 1px;
     width: 100%;
@@ -133,7 +138,7 @@ body {
     margin: 15px 0 10px;
 }
 
-.sub-menu-wrap p {
+#sub-menu-wrap p {
     color: #000000;
     width: 100%;
     transition: transform 0.25s;
@@ -141,11 +146,11 @@ body {
     font-weight: 450;
 }
 
-.sub-menu-wrap a {
+#sub-menu-wrap a {
     color: #000000;
 }
 
-.sub-menu-link img {
+#sub-menu-link img {
     width: 45px;
     background-color: #e5e5e5;
     border-radius: 50%;
@@ -153,28 +158,28 @@ body {
     margin-right: 15px;
 }
 
-.sub-menu-link {
+#sub-menu-link {
     display: flex;
     align-items: center;
     text-decoration: none;
     margin: 12px 0;
 }
 
-.sub-menu-link span {
+#sub-menu-link span {
     font-size: 22px;
     transition: transform 0.25s;
 }
 
-.sub-menu-link:hover span{
+#sub-menu-link:hover span{
     transform: translateX(7px);
 }
 
-.sub-menu-link:hover p{
+#sub-menu-link:hover p{
     transform: translateX(7px);
     font-weight: 550;
 }
 
-/* .navbar .btnLogin-popup {
+/* #navbar #btnLogin-popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -182,14 +187,14 @@ body {
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1#1em;
     color: #ffffff;
     font-weight: 500;
     margin-left: 40px;
-    transition: .5s;
+    transition: #5s;
 }
 
-.navbar .btnLogin-popup:hover {
+#navbar #btnLogin-popup:hover {
     background: #ffffff;
     color: #162938;
 } */
@@ -201,26 +206,31 @@ margin: 0;
 
 /* Recipe check */
 
-.wrapper {
-    background-color: #192229;
+#wrapper {
+    background-color: #1a1d21;
     color: #ffffff;
     padding: 30px;
     margin: 120px 0 30px 0;
     border-radius: 12px;
 }
 
-.hrSeperator {
+.labelIcon {
+    display: flex;
+    align-items: center;
+}
+
+#hrSeperator {
     border: 1px #a9a9a9 solid;
     text-align: center;
     margin: 10px;
 }
 
-.closeRecipeIcon {
-    filter: invert(70%) sepia(59%) saturate(3396%) hue-rotate(313deg) brightness(102%) contrast(104%);
+#closeRecipeIcon {
+    filter: invert(73%) sepia(99%) saturate(2816%) hue-rotate(312deg) brightness(100%) contrast(103%);
     vertical-align: middle;
 }
 
-.closeRecipeBtn {
+#closeRecipeBtn {
     background: none;
     border-radius: 5px;
     border: 1px #162938;
@@ -231,15 +241,15 @@ margin: 0;
 
 }
 
-.recipeName {
+#recipeName {
     font-weight: 750;
-    font-family: "Poppins", sans-serif;
+    font-family: "OpenSans", sans-serif;
     font-size: 3em;
     text-align: center;
     margin: 0;
 }
 
-.recipeDescription {
+#recipeDescription {
     font-weight: 500;
     font-family: "AlbertSans", sans-serif;
     font-size: 2em;
@@ -247,110 +257,73 @@ margin: 0;
     margin-bottom: 40px;
 }
 
-.recipeCheckImg {
+#recipeCheckImg {
     height: 365px;
     justify-content: space-between;
 }
-
-.ingrendientsLabel {
-    font-family: "Poppins", sans-serif;
+ 
+.label {
+    font-family: "OpenSans", sans-serif;
     font-weight: 680;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
+    margin-bottom: 8px;
+    vertical-align: middle;
 }
 
-.ingrendientsList {
+.list {
     font-family: "AlbertSans", sans-serif;
     font-size: 20px;
 }
 
-.equipmentLabel {
-    font-family: "Poppins", sans-serif;
-    font-weight: 680;
-    font-size: 20px;
-    display: flex;
-}
-
-.equipmentList {
+#instructions {
     font-family: "AlbertSans", sans-serif;
     font-size: 20px;
 }
 
-.instructionsLabel {
-    font-family: "Poppins", sans-serif;
-    font-weight: 680;
-    font-size: 20px;
-    display: flex;
-}
-
-.instructions {
-    font-family: "AlbertSans", sans-serif;
-    font-size: 20px;
-}
-
-.ratingLabel {
-    font-family: "Poppins", sans-serif;
-    font-weight: 640;
-    font-size: 30px;
-    display: flex;
-    margin-bottom: 2px;
-}
-
-.leaveReviewLabel {
-    font-family: "Poppins", sans-serif;
-    font-weight: 640;
-    font-size: 30px;
-    display: flex;
-    margin-bottom: 2px;
-}
-
-.checkReviewLabel {
-    font-family: "Poppins", sans-serif;
-    font-weight: 640;
-    font-size: 30px;
-    display: flex;
-    margin-bottom: 2px;
-}
-
-.ratingElements{
+#ratingElements{
     display: flexbox;
 }
 
-.likeBtn {
+#likeBtn {
     background-color: #27343b;
     border: 0px;
     border-radius: 4px;
 }
 
-.dislikeBtn {
+#dislikeBtn {
     background-color: #27343b;
     border: 0px;
     border-radius: 4px;
 }
 
-.reviewDislikeBtn {
+#reviewDislikeBtn {
     background-color: #27343b;
     border: 0px;
 }
 
-.reviewLikeBtn {
+#reviewLikeBtn {
     background-color: #27343b;
     border: 0px;
 }
 
-.likeIcon {
+#likeIcon {
     filter: invert(47%) sepia(51%) saturate(539%) hue-rotate(84deg) brightness(103%) contrast(97%);
 }
 
-.dislikeIcon {
+#dislikeIcon {
     filter: invert(35%) sepia(97%) saturate(3798%) hue-rotate(345deg) brightness(93%) contrast(102%);
 }
 
-.test123 {
+#displayFalse {
     display: none;
 }
 
-.recipeDate {
+#displayTrue {
+    display: block;
+}
+
+#recipeDate {
     font-family: "AlbertSans", sans-serif;
     font-weight: 350;
     margin: 7px 0 13px 0;
@@ -358,7 +331,7 @@ margin: 0;
     color: #a8a8a8;
 }
 
-.ratingButtons {
+#ratingButtons {
     display: flex;
     margin-right: 850px;
     color: white;
@@ -396,25 +369,39 @@ margin: 0;
 }
 
 
-.likeBtn {
+#likeBtn {
     margin-right: 15px;
 }
+
+/* Recipe's tags */
+
+.tags {
+    font-family: "AlbertSans", sans-serif;
+    background-color: #528748b4;
+    border-radius: 12px;
+    min-width: 1px;
+    font-size: 16px;
+    padding: 6px;
+    margin: 0 2px 0 2px;
+}
+
+/* Leave a review for the recipe.*/
 
 #reviewTop {
     display: flex;
     margin-bottom: 8px;
     gap: 8px;
-    background-color: #29353f;
+    background-color: #292e35;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding: 5px;
 }
 
 #reviewCard {
-    background-color: #354552;
+    background-color: #3d495a;
     width: 100%;
     border-radius: 4px;
-    font-family: "OpenSans", sans-serif;
+    font-family: "Varela", sans-serif;
     width: 50%;
 }
 
@@ -455,6 +442,33 @@ margin: 0;
 }
 
 #reviewBottom {
-    background-color: #27343b;
+    background-color: #292e35;
     display: flex;
+}
+
+#ingredientList {
+    display: flexbox;
+    font-family: "AlbertSans", sans-serif;
+}
+
+.ingredient {
+    display: flex;
+    align-items: center;
+}
+
+.IngredientNumber {
+    font-weight: 620;
+    font-size: 20px;
+    margin: 0 8px 0 0;
+    color: #5e5e5e;
+}
+
+.ingredientName {
+    color: #ffffff;
+    margin: 0 15px 0 0;
+}
+
+.ingredientQuantity {
+    color: #a8a8a8;
+    margin: 0 15px 0 0;
 }

@@ -7,39 +7,39 @@
 </head>
 
 <body>
-    <header class="header">
-        <a href="#" class="logo">Trybite</a>
-        <nav class="navbar">
+    <header id="header">
+        <a href="#" id="logo">Trybite</a>
+        <nav id="navbar">
             <a href="index.html">Home</a>
             <a href="Rating.html">Rating</a>
-            <button class="btnLogin-popup"><img src="../icons/profile-icons/user.png" width="55" alt=""
-                    class="accountPfp" onclick="toggleMenu()" width="20"></button>
+            <button id="btnLogin-popup"><img src="../../Images/Icons/profilepicture.png" width="55" alt=""
+                    id="accountPfp" onclick="toggleMenu()" width="20"></button>
 
-            <div class="sub-menu-wrap" id="subMenu">
-                <div class="sub-menu">
-                    <div class="user-info">
-                        <img src="../icons/profile-icons/user.png" id="profilePicture">
+            <div id="sub-menu-wrap" id="subMenu">
+                <div id="sub-menu">
+                    <div id="user-info">
+                        <img src="../Icons/profile-Icons/user.png" id="profilePicture">
                         <p id="username">Snipe</p>
                     </div>
                     <hr>
 
-                    <a href="" class="sub-menu-link">
-                        <img src="../icons/profile-icons/profile.png">
-                        <p>Edit Profile</p>
+                    <a href="" id="sub-menu-link">
+                        <img src="../../Images/Icons/account.svg">
+                        <p>Edit Account</p>
                         <span>></span>
                     </a>
-                    <a href="" class="sub-menu-link">
-                        <img src="../icons/profile-icons/setting.png">
+                    <a href="" id="sub-menu-link">
+                        <img src="../../Images/Icons/settings.svg">
                         <p>Settings & Privacy</p>
                         <span>></span>
                     </a>
-                    <a href="" class="sub-menu-link">
-                        <img src="../icons/profile-icons/help.png">
+                    <a href="" id="sub-menu-link">
+                        <img src="../../Images/Icons/help.svg">
                         <p>Help & Support</p>
                         <span>></span>
                     </a>
-                    <a href="" class="sub-menu-link">
-                        <img src="../icons/profile-icons/logout.png">
+                    <a href="" id="sub-menu-link">
+                        <img src="../../Images/Icons/logout.svg">
                         <p>Logout</p>
                         <span>></span>
                     </a>
@@ -50,40 +50,63 @@
 
         </nav>
     </header>
-    <div class="wrapper">
+    <div id="wrapper">
         <a href="recipes.html">
-            <button class="closeRecipeBtn"><img src="../icons/recipe-icons/recipe-backarrow.svg" width="30" alt=""
-                    class="closeRecipeIcon"> Close</button>
+            <button id="closeRecipeBtn">
+                <img src="../../Images/Icons/close-arrow.svg" width="30" id="closeRecipeIcon"> Close
+            </button>
         </a>
-        <p class="recipeName">Strawberry cake</p>
-        <p class="recipeDescription">Delicious, easy to make strawberry cake for 3 people</p>
-        <img src="strawberrycake.jpg" class="recipeCheckImg">
-        <img src="strawberrycake.jpg" class="recipeCheckImg">
-        <img src="strawberrycake.jpg" class="recipeCheckImg">
-        <hr class="hrSeperator">
-        <p class="ingrendientsLabel">Ingrendients:</p>
-        <ol class="ingrendientsList">
-            <li>Water</li>
-            <li>Flour</li>
-            <li>Sugar</li>
-            <li>Eggs</li>
-            <li>Strawberries</li>
-        </ol>
+        <p id="recipeName">Strawberry cake</p>
+        <p id="recipeDescription">Delicious, easy to make strawberry cake for 3 people</p>
+        <img src="strawberrycake.jpg" id="recipeCheckImg">
+        <img src="strawberrycake.jpg" id="recipeCheckImg">
+        <img src="strawberrycake.jpg" id="recipeCheckImg">
 
-        <hr class="hrSeperator">
+        <hr id="hrSeperator">
 
-        <p class="equipmentLabel">Equipment:</p>
-        <ol class="equipmentList">
+        <div class="labelIcon"><p id="IngredientsLabel" class="label"><span><img src="../../Images/Icons/ingredients.svg" width="25"></span>Ingredients:</p></div>
+
+        <div id="ingredientList" class="list">
+            <div id="ingredient1" class="ingredient">
+                <p id="ingredient1number" class="IngredientNumber">1.</p>
+                <p id="ingredient1name" class="ingredientName">Sparkling water</p>
+                <p id="ingredient1quantity" class="ingredientQuantity">300ml</p>
+            </div>
+
+            <div id="ingredient2" class="ingredient">
+                <p id="ingredient2number" class="IngredientNumber">1.</p>
+                <p id="ingredient2name" class="ingredientName">Lemon</p>
+                <p id="ingredient2quantity" class="ingredientQuantity">Half</p>
+            </div>
+
+            <div id="ingredient3" class="ingredient">
+                <p id="ingredient3number" class="IngredientNumber">1.</p>
+                <p id="ingredient3name" class="ingredientName">Lime</p>
+                <p id="ingredient3quantity" class="ingredientQuantity">Half</p>
+            </div>
+
+            <div id="ingredient4" class="ingredient">
+                <p id="ingredient4number" class="IngredientNumber">1.</p>
+                <p id="ingredient4name" class="ingredientName">Sugar</p>
+                <p id="ingredient4quantity" class="ingredientQuantity">2 tablespoons</p>
+            </div>
+        </div>
+
+        <hr id="hrSeperator">
+
+        <div class="labelIcon"><span><img src="../../Images/Icons/equipment.svg" width="25"></span><p id="equipmentLabel" class="label">Equipment:</p></div>
+        <ol id="equipmentList" class="list">
             <li>Oven</li>
             <li>Knife</li>
             <li>Mixer</li>
             <li>Bowl</li>
         </ol>
 
-        <hr class="hrSeperator">
+        <hr id="hrSeperator">
 
-        <p class="instructionsLabel">Instructions:</p>
-        <ol class="instructions">
+
+        <div class="labelIcon"><span><img src="../../Images/Icons/instructions.svg" width="25"></span><p id="instructionsLabel" class="label">Instructions:</p></div>
+        <ol id="instructions">
             <li>Put flour in the bowl</li>
             <li>Slowly pour in water while mixing everything together</li>
             <li>Add 4 cups of sugar</li>
@@ -93,58 +116,71 @@
             <li>Sprinkle them on your baked cake</li>
         </ol>
 
-        <p class="recipeDate">This recipe was posted on: 2024/04/13</p>
+        <p id="recipeDate">This recipe was posted on: 2024/04/13</p>
 
-        <hr class="hrSeperator">
+        <hr id="hrSeperator">
 
 
-        <div class="ratingElements">
-            <p class="ratingLabel">Rate the recipe:</p>
-            <div class="ratingButtons">
+        <div id="ratingElements">
+            <p id="ratingLabel" class="label">Rate the recipe:</p>
+            <div id="ratingButtons">
                 <p id="likeCounter">12</p>
-                <button class="likeBtn"><img src="../../Images/icons/recipe-icons/recipe-dislike.svg" width="30" alt=""
-                        class="likeIcon"></button>
-                <button class="dislikeBtn"><img src="../../Images/icons/recipe-icons/recipe-dislike.svg" width="30" alt=""
-                        class="dislikeIcon"></button>
+                <button id="likeBtn"><img src="../../Images/Icons/dislike.svg" width="30" alt=""
+                        id="likeIcon"></button>
+                <button id="dislikeBtn"><img src="../../Images/Icons/dislike.svg" width="30" alt=""
+                        id="dislikeIcon"></button>
                 <p id="dislikeCounter">3</p>
             </div>
 
-            <hr class="hrSeperator">
-            <div class="leaveReviewElements">
-                <p class="leaveReviewLabel">Leave a review:</p>
+            <hr id="hrSeperator">
+
+            <p id="tagsLabel" class="label">Recipe's tags:</p>
+            <div id="tagsList">
+                <span class="tags">Sour</span>
+                <span class="tags">Sweet</span>
+                <span class="tags">Simple</span>
+                <span class="tags">Cheap</span>
+                <span class="tags">lemonade</span>
             </div>
 
-            <hr class="hrSeperator">
+            <hr id="hrSeperator">
+            <div id="leaveReviewElements">
+                <p id="leaveReviewLabel" class="label">Leave a review:</p>
+            </div>
 
-            <div class="ReviewElements">
-                <p class="checkReviewLabel">Reviews (4):</p>
+            <hr id="hrSeperator">
+
+            <div id="ReviewElements">
+                <p id="checkReviewLabel" class="label">Reviews (4):</p>
                 <div id="reviews">
                     <div id="reviewCard">
                         <div id="reviewTop">
-                        <img src="../icons/profile-icons/user.png" width="30" id="reviewPfp">
+                        <img src="../../Images/Icons/profilepicture.png" width="30" id="reviewPfp">
                         <p id="reviewAuthor">Snipe</p>
                         <p id="reviewStars">⭐⭐⭐⭐⭐</p>
-                        <button id="reviewInteract"><img src="../../Images/icons/misc-icons/menu.svg" alt="" id="reviewIcon"></button>
+                        <button id="reviewInteract"><img src="../../Images/Icons/menu.svg" alt="" id="reviewIcon"></button>
                         </div>
-                        <p id="reviewComment">Really tasty, easy to make recipe. You barely need any ingrendients, 100% recommend it!</p>
+                        <p id="reviewComment">Really tasty, easy to make recipe. You barely need any Ingredients, 100% recommend it!</p>
                         <div id="reviewBottom">
                         <p id="reviewLikeCounter">2</p>
-                        <button class="reviewLikeBtn"><img src="../../Images/icons/recipe-icons/recipe-dislike.svg" width="30" alt=""class="likeIcon"></button>
-                        <button class="reviewDislikeBtn"><img src="../../Images/icons/recipe-icons/recipe-dislike.svg" width="30" alt="" class="dislikeIcon"></button>
+                        <button id="reviewLikeBtn"><img src="../../Images/Icons/dislike.svg" width="30" alt=""id="likeIcon"></button>
+                        <button id="reviewDislikeBtn"><img src="../../Images/Icons/dislike.svg" width="30" alt="" id="dislikeIcon"></button>
                         <p id="reviewDislikeCounter">1</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div id="reviewInteractMenu">
-                <p>Share the recipe<span></span></p>
+                <p>Share recipe<span><img src="../../Images/Icons/share.svg" width="30"></span></p>
+                <hr id="hrSeperator">
+                <p>Report recipe<span><img src="../../Images/Icons/report.svg" width="30"></span></p>
             </div>
             <script src="recipe check.js"></script>
             <script>
                 let subMenu = document.getElementById("subMenu")
 
                 function toggleMenu() {
-                    subMenu.classList.toggle("open-menu");
+                    subMenu.idList.toggle("open-menu");
                 }
             </script>
 
