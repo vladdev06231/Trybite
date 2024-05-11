@@ -222,7 +222,7 @@ margin: 0;
 #hrSeperator {
     border: 1px #a9a9a9 solid;
     text-align: center;
-    margin: 10px;
+    margin: 20px 0 20px 0;
 }
 
 #closeRecipeIcon {
@@ -298,12 +298,12 @@ margin: 0;
 }
 
 #reviewDislikeBtn {
-    background-color: #27343b;
+    background-color: #262a30;
     border: 0px;
 }
 
 #reviewLikeBtn {
-    background-color: #27343b;
+    background-color: #262a30;
     border: 0px;
 }
 
@@ -391,14 +391,14 @@ margin: 0;
     display: flex;
     margin-bottom: 8px;
     gap: 8px;
-    background-color: #292e35;
+    background-color: #262a30;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     padding: 5px;
 }
 
 #reviewCard {
-    background-color: #3d495a;
+    background-color: #343941;
     width: 100%;
     border-radius: 4px;
     font-family: "Varela", sans-serif;
@@ -410,7 +410,7 @@ margin: 0;
 }
 
 #reviewAuthor {
-    font-weight: 650;
+    font-weight: 550;
 }
 
 #reviewStars {
@@ -442,7 +442,7 @@ margin: 0;
 }
 
 #reviewBottom {
-    background-color: #292e35;
+    background-color: #262a30;
     display: flex;
 }
 
@@ -471,4 +471,55 @@ margin: 0;
 .ingredientQuantity {
     color: #a8a8a8;
     margin: 0 15px 0 0;
+}
+
+#equipmentList {
+    display: flexbox;
+    font-family: "AlbertSans", sans-serif;
+}
+
+.equipment {
+    display: flex;
+    align-items: center;
+}
+
+.equipmentNumber {
+    font-weight: 620;
+    font-size: 20px;
+    margin: 0 8px 0 0;
+    color: #5e5e5e;
+}
+
+.equipmentName {
+    color: #ffffff;
+    margin: 0 15px 0 0;
+}
+
+#instructionsList {
+    display: flexbox;
+    font-family: "AlbertSans", sans-serif;
+}
+
+.instruction {
+    display: flex;
+    align-items: center;
+}
+
+.instructionNumber {
+    font-weight: 620;
+    font-size: 20px;
+    margin: 0 8px 0 0;
+    color: #5e5e5e;
+}
+
+.instructionName {
+    color: #ffffff;
+    margin: 0 15px 0 0;
+}
+
+#reviewInteractMenu {
+    font-family: "OpenSans", sans-serif;
+}
+.reviewInteract {
+    cursor: pointer;
 }

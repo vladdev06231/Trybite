@@ -3,7 +3,7 @@
 
 <head>
     <title>Document</title>
-    <link rel="stylesheet" href="recipe check.css">
+    <link rel="stylesheet" href="recipe-check.css">
 </head>
 
 <body>
@@ -56,8 +56,8 @@
                 <img src="../../Images/Icons/close-arrow.svg" width="30" id="closeRecipeIcon"> Close
             </button>
         </a>
-        <p id="recipeName">Strawberry cake</p>
-        <p id="recipeDescription">Delicious, easy to make strawberry cake for 3 people</p>
+        <p id="recipeName">Homemade Sprite</p>
+        <p id="recipeDescription">Perfect for hot weathers and saving money</p>
         <img src="strawberrycake.jpg" id="recipeCheckImg">
         <img src="strawberrycake.jpg" id="recipeCheckImg">
         <img src="strawberrycake.jpg" id="recipeCheckImg">
@@ -68,53 +68,70 @@
 
         <div id="ingredientList" class="list">
             <div id="ingredient1" class="ingredient">
-                <p id="ingredient1number" class="IngredientNumber">1.</p>
-                <p id="ingredient1name" class="ingredientName">Sparkling water</p>
-                <p id="ingredient1quantity" class="ingredientQuantity">300ml</p>
+                <p id="ingredient1Number" class="IngredientNumber">1.</p>
+                <p id="ingredient1Name" class="ingredientName">Sparkling water</p>
+                <p id="ingredient1Quantity" class="ingredientQuantity">300ml</p>
             </div>
 
             <div id="ingredient2" class="ingredient">
-                <p id="ingredient2number" class="IngredientNumber">1.</p>
-                <p id="ingredient2name" class="ingredientName">Lemon</p>
-                <p id="ingredient2quantity" class="ingredientQuantity">Half</p>
+                <p id="ingredient2Number" class="IngredientNumber">2.</p>
+                <p id="ingredient2Name" class="ingredientName">Lemon</p>
+                <p id="ingredient2Quantity" class="ingredientQuantity">Half</p>
             </div>
 
             <div id="ingredient3" class="ingredient">
-                <p id="ingredient3number" class="IngredientNumber">1.</p>
-                <p id="ingredient3name" class="ingredientName">Lime</p>
-                <p id="ingredient3quantity" class="ingredientQuantity">Half</p>
+                <p id="ingredient3Number" class="IngredientNumber">3.</p>
+                <p id="ingredient3Name" class="ingredientName">Lime</p>
+                <p id="ingredient3Quantity" class="ingredientQuantity">Half</p>
             </div>
 
             <div id="ingredient4" class="ingredient">
-                <p id="ingredient4number" class="IngredientNumber">1.</p>
-                <p id="ingredient4name" class="ingredientName">Sugar</p>
-                <p id="ingredient4quantity" class="ingredientQuantity">2 tablespoons</p>
+                <p id="ingredient4Number" class="IngredientNumber">4.</p>
+                <p id="ingredient4Name" class="ingredientName">Sugar</p>
+                <p id="ingredient4Quantity" class="ingredientQuantity">2 tablespoons</p>
             </div>
         </div>
 
         <hr id="hrSeperator">
 
-        <div class="labelIcon"><span><img src="../../Images/Icons/equipment.svg" width="25"></span><p id="equipmentLabel" class="label">Equipment:</p></div>
-        <ol id="equipmentList" class="list">
-            <li>Oven</li>
-            <li>Knife</li>
-            <li>Mixer</li>
-            <li>Bowl</li>
-        </ol>
+        <!-- Recipe's equipment code -->
 
+        <div class="labelIcon"><span><img src="../../Images/Icons/equipment.svg" width="25"></span><p id="equipmentLabel" class="label">Equipment:</p></div>
+
+        <div id="equipmentList" class="list">
+            <div id="equipment1" class="equipment">
+                <p id="equipment1Number" class="equipmentNumber">1.</p>
+                <p id="equipment1Name" class="equipmentName">Lemon squeezer</p>
+            </div>
+        </div>
         <hr id="hrSeperator">
 
+        <!-- Recipe's instructions code -->
 
         <div class="labelIcon"><span><img src="../../Images/Icons/instructions.svg" width="25"></span><p id="instructionsLabel" class="label">Instructions:</p></div>
-        <ol id="instructions">
-            <li>Put flour in the bowl</li>
-            <li>Slowly pour in water while mixing everything together</li>
-            <li>Add 4 cups of sugar</li>
-            <li>Crack in 2 eggs</li>
-            <li>Bake in the oven</li>
-            <li>Cut your strawberriess</li>
-            <li>Sprinkle them on your baked cake</li>
-        </ol>
+
+        <div id="instructionsList" class="list">
+            <div id="instruction1" class="instruction">
+                <p id="instruction1Number" class="instructionNumber">1.</p>
+                <p id="instruction1Name" class="instructionName">Squeeze your lemon and lime.</p>
+            </div>
+            <div id="instruction2" class="instruction">
+                <p id="instruction2Number" class="instructionNumber">2.</p>
+                <p id="instruction2Name" class="instructionName">Mix the lemon and the lime juice together.</p>
+            </div>
+            <div id="instruction3" class="instruction">
+                <p id="instruction3Number" class="instructionNumber">3.</p>
+                <p id="instruction3Name" class="instructionName">Pour sparkling water in your cup and pour the lime and lemon mixture in the water.</p>
+            </div>
+            <div id="instruction4" class="instruction">
+                <p id="instruction4Number" class="instructionNumber">4.</p>
+                <p id="instruction4Name" class="instructionName">Mix the sparkling water and the mixture together.</p>
+            </div>
+            <div id="instruction5" class="instruction">
+                <p id="instruction5Number" class="instructionNumber">5.</p>
+                <p id="instruction5Name" class="instructionName">Finish by adding 2-3 tablespoons of sugar into your drink and mix for 30 seconds.</p>
+            </div>
+        </div>
 
         <p id="recipeDate">This recipe was posted on: 2024/04/13</p>
 
@@ -149,31 +166,34 @@
             </div>
 
             <hr id="hrSeperator">
-
-            <div id="ReviewElements">
-                <p id="checkReviewLabel" class="label">Reviews (4):</p>
-                <div id="reviews">
-                    <div id="reviewCard">
-                        <div id="reviewTop">
-                        <img src="../../Images/Icons/profilepicture.png" width="30" id="reviewPfp">
-                        <p id="reviewAuthor">Snipe</p>
-                        <p id="reviewStars">⭐⭐⭐⭐⭐</p>
-                        <button id="reviewInteract"><img src="../../Images/Icons/menu.svg" alt="" id="reviewIcon"></button>
-                        </div>
-                        <p id="reviewComment">Really tasty, easy to make recipe. You barely need any Ingredients, 100% recommend it!</p>
-                        <div id="reviewBottom">
-                        <p id="reviewLikeCounter">2</p>
-                        <button id="reviewLikeBtn"><img src="../../Images/Icons/dislike.svg" width="30" alt=""id="likeIcon"></button>
-                        <button id="reviewDislikeBtn"><img src="../../Images/Icons/dislike.svg" width="30" alt="" id="dislikeIcon"></button>
-                        <p id="reviewDislikeCounter">1</p>
+            <div id="reviewsList">
+                <div id="ReviewElements">
+                    <p id="checkReviewLabel" class="label">Reviews (4):</p>
+                    <div id="reviews">
+                        <div id="reviewCard">
+                            <div id="reviewTop">
+                            <img src="../../Images/Icons/profilepicture.png" width="30" id="reviewPfp">
+                            <p id="reviewAuthor">Snipe</p>
+                            <p id="reviewStars">⭐⭐⭐⭐⭐</p>
+                            <button id="reviewInteract"><img src="../../Images/Icons/menu.svg" alt="" id="reviewIcon"></button>
+                            </div>
+                            <p id="reviewComment">Really tasty, easy to make recipe. You barely need any Ingredients, 100% recommend it!</p>
+                            <div id="reviewBottom">
+                            <p id="reviewLikeCounter">2</p>
+                            <button id="reviewLikeBtn"><img src="../../Images/Icons/dislike.svg" width="30" alt=""id="likeIcon"></button>
+                            <button id="reviewDislikeBtn"><img src="../../Images/Icons/dislike.svg" width="30" alt="" id="dislikeIcon"></button>
+                            <p id="reviewDislikeCounter">1</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
             <div id="reviewInteractMenu">
-                <p>Share recipe<span><img src="../../Images/Icons/share.svg" width="30"></span></p>
+                <p class="reviewInteract">Share recipe<span><img src="../../Images/Icons/share.svg" width="30"></span></p>
                 <hr id="hrSeperator">
-                <p>Report recipe<span><img src="../../Images/Icons/report.svg" width="30"></span></p>
+                <p class="reviewInteract">Report recipe<span><img src="../../Images/Icons/report.svg" width="30"></span></p>
             </div>
             <script src="recipe check.js"></script>
             <script>
