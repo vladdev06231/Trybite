@@ -1,0 +1,53 @@
+
+/* Fonts install */
+@font-face {
+    font-family: Varela;
+    src: url("../fonts/VarelaRound-Regular.ttf");
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(../fonts/OpenSans.ttf);
+}
+body {
+    margin: 45px 0 0 80px;
+    font-family: "OpenSans", sans-serif;
+}
+#errorPageTitle {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 500;
+}
+
+#errorPageBtn {
+    border-radius: 40px;
+    min-width: 1px;
+    height: 65px;
+    font-size: 20px;
+    background-color: #4fb835;
+    font-family: "Fredoka-one", sans-serif;
+    font-weight: 450;
+    transition: all 0.2s ease;
+    border: 3px #32522a solid;
+    margin-top: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+  #errorPageBtn:active {
+    transform: scale(0.96);
+  }
+  #errorPageBtn:before,
+  #errorPageBtn:after {
+    content: "";
+    width: 150%;
+    left: 50%;
+    height: 100%;
+    transform: translateX(-50%);
+    z-index: -1000;
+    background-repeat: no-repeat;
+  }
+
+  #errorPageDesc {
+    margin: 10px 0 25px 0;
+  }
