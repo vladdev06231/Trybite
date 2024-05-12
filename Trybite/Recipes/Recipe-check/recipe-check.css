@@ -519,7 +519,19 @@ margin: 0;
 
 #reviewInteractMenu {
     font-family: "OpenSans", sans-serif;
+    background-color: #4c5258;
+    color: white;
 }
 .reviewInteract {
     cursor: pointer;
+    align-items: center;
+    display: flex;
+}
+
+#shareIcon {
+    filter: invert(61%) sepia(39%) saturate(524%) hue-rotate(63deg) brightness(92%) contrast(90%);
+}
+
+#reportIcon {
+    filter: invert(13%) sepia(49%) saturate(5690%) hue-rotate(353deg) brightness(76%) contrast(117%);
 }
