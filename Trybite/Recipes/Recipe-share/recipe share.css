@@ -76,7 +76,6 @@
 }
 
 #recipeShareCopyLinkBtn {
-    margin-left: 155px;
     border-radius: 50%;
     border: none;
     background-color: #4fb835;
@@ -88,5 +87,5 @@
 }
 
 #shareRecipeLink {
-    margin-left: 20px;
+    margin: 12px 20px 0 155px;
 }
