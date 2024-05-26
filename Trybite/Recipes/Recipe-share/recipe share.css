@@ -1,24 +1,18 @@
 /* Fonts install */
 @font-face {
-    font-family: Varela;
-    src: url("../fonts/VarelaRound-Regular.ttf");
-}
-
-@font-face {
-    font-family: Fredoka-one;
-    src: url("../fonts/FredokaOne.ttf");
-}
-
-@font-face {
-    font-family: Poppins;
-    src: url(../fonts/Poppins-Bold.ttf);
+    font-family: AlbertSans;
+    src: url(AlbertSans.ttf);
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url(../fonts/OpenSans.ttf);
+    src: url(OpenSans.ttf);
 }
 
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito.ttf);
+}
 #shareRecipeCard {
     background-color: #192229;
     border-radius: 8px;

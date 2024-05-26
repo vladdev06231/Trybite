@@ -1,0 +1,80 @@
+/* Fonts import: */
+@font-face {
+    font-family: AlbertSans;
+    src: url(AlbertSans.ttf);
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url(OpenSans.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(Nunito.ttf);
+}
+
+/* Breif style: */
+#wrapper {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    background-color: #1a1d21 ;
+    color: white;
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    height: 90vh;
+    font-family: "Nunito", sans-serif;
+}
+
+.hrSeperator {
+    width: 90%;
+    height: 2px;
+    background-color: #394955;
+    border: none;
+}
+
+/* General style: */
+
+#quitBtn {
+    width: 150x;
+    height: 50px;
+    font-size: 25px;
+    background: none;
+    border: none;
+    color: #ff7979;
+}
+
+#quitIcon {
+    filter: invert(73%) sepia(99%) saturate(2816%) hue-rotate(312deg) brightness(100%) contrast(103%);
+    vertical-align: middle;
+}
+
+#createRecipeLabel {
+    font-size: 25px;
+    font-family: "OpenSans", sans-serif;
+}
+
+#uploadBtn {
+    border-radius: 40px;
+    width: 165px;
+    height: 50px;
+    font-size: 25px;
+    background-color: #4fb835;
+    font-family: "AlbertSans", sans-serif;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border: 3px #32522a solid;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.input {
+    font-family: "OpenSans", sans-serif;
+    font-weight: 580;
+    padding: 5px;
+    border-radius: 3px;
+    border: black 1px solid;
+    outline: none;
+}
