@@ -11,71 +11,52 @@
     src: url(../Fonts/AlbertSans.ttf);
 }
 
-body {
-    margin: 0;
-    font-family: "OpenSans", sans-serif;
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    min-width: 300px;
 }
 
-#signupWrapper {
-    display: flex;
+/* Style the input fields */
+input {
+    padding: 10px;
+    width: 100%;
+    font-size: 17px;
+    font-family: Raleway;
+    border: 1px solid #aaaaaa;
 }
 
-#signupCompletionBar {
-    min-height: 100%;
-    width: 200px;
-    background-color: #558748;
-    margin: 0 150px 0 0;
-    text-align: center;
-    display: flexbox;
-    padding-bottom: 50px;
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
 }
 
-#signupFillout {
-    display: flexbox;
-}
-
-.signupMotivation {
-    font-size: 30px;
-    font-weight: 520;
-}
-
-#signupCompletionLineGreen {
-    height: 100%;
-    background-color: #4fb835;
-    width: 40px;
-    margin: 0 80px 0 80px;
-    border-radius: 50px;
-    z-index: 10;
-}
-
-.signupMotivation {
-    color: #1a1d21;
-    font-size: 55px;
-    font-weight: 650;
-    font-family: "OpenSans", sans-serif;
-}
-
-.signupLabel {
-    font-family: "AlbertSans", sans-serif;
-    font-weight: 550;
-    font-size: 30px;
-}
-
-.displayFalse {
+/* Hide all steps by default: */
+.tab {
     display: none;
 }
 
-.displayTrue {
-    display: block;
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 35px;
+    margin: 0;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 15px;
+    display: inline-block;
+    opacity: 0.5;
 }
 
-#signupWrapper {
-    background-color: bisque;
-    width: 85%;
-    height: 900px;
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
 }
 
-#signupFillout {
-    text-align: center;
-    justify-content: center;
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
 }

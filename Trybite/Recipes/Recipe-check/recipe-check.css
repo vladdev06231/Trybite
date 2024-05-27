@@ -408,7 +408,6 @@ margin: 0;
 
 #reviewTop {
     display: flex;
-    margin-bottom: 8px;
     gap: 8px;
     background-color: #262a30;
     border-top-left-radius: 4px;
@@ -417,7 +416,6 @@ margin: 0;
 }
 
 #reviewCard {
-    background-color: #343941;
     border-radius: 4px;
     font-family: "Varela", sans-serif;
     max-width: 500px;
@@ -438,8 +436,6 @@ margin: 0;
 
 #reviewInteract {
     background-color: #131313;
-    height: 50px;
-    width: 50px;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -448,6 +444,10 @@ margin: 0;
     border: none;
     width: 32px;
     height: 32px;
+}
+
+#reviewMiddle {
+    background-color: #343941;
 }
 
 #reviewIcon {

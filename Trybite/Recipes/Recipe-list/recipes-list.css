@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Fonts import: */
 @font-face {
     font-family: AlbertSans;
@@ -133,10 +137,10 @@ body {
     background-color: #d3dad2;
     border: #5b7e53 8px solid;
     color: #2A2B2E;
-    padding: 5px 20px 0 20px;
+    padding: 5px 20px 20px 20px;
     margin: 17px;
     border-radius: 20px;
-    height: 850px;
+    min-height: 1px;
     width: 470px;
     text-align: center;
     font-weight: 550;
@@ -172,9 +176,10 @@ body {
 }
 
  #recipeCardDescription {
-    font-size: 14px;
+    font-size: 17px;
     text-align: center;
     margin-bottom: 15px;
+     margin-top: -20px;
     font-family: "AlbertSans", sans-serif;
 }
 
