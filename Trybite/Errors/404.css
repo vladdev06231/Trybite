@@ -16,6 +16,12 @@
   src: url(../Fonts/Nunito.ttf);
 }
 
+@font-face {
+  font-family: LemonMilk;
+  src: url(../Fonts/LemonMilk.otf);
+}
+
+/* Breif style: */
 
 body {
     margin: 45px 0 0 80px;
@@ -23,6 +29,8 @@ body {
     color: #fff;
     background-color: #1a1d21 ;
 }
+
+/* Breif style: */
 #errorPageTitle {
     font-size: 40px;
     margin: 0;
@@ -35,14 +43,20 @@ body {
     min-width: 1px;
     height: 65px;
     font-size: 20px;
-    background-color: #4fb835;
+    background-color: #4c803f;
     font-family: "AlbertSans", sans-serif;
     font-weight: 450;
     transition: all 0.2s ease;
-    border: 3px #32522a solid;
+    border: 2px #184d0a solid;
     margin-top: 20px;
     cursor: pointer;
     color: white;
+    padding: 0 15px 0 15px;
+}
+
+#errorPageTipsTitle {
+  font-family: "Nunito", sans-serif;
+  font-weight: 650;
 }
 
   #errorPageBtn:active {

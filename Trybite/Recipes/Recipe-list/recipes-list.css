@@ -1,30 +1,25 @@
-
 /* Fonts import: */
 @font-face {
     font-family: AlbertSans;
-    src: url(AlbertSans.ttf);
+    src: url(../../fonts/AlbertSans.ttf);
 }
 
 @font-face {
     font-family: OpenSans;
-    src: url(OpenSans.ttf);
+    src: url(../../fonts/OpenSans.ttf);
 }
 
 @font-face {
     font-family: Nunito;
-    src: url(Nunito.ttf);
+    src: url(../../fonts/Nunito.ttf);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
-.wrapper {
-    background-color: #161718;
-    min-height: 100%;
-    width: 100%;
+@font-face {
+    font-family: LemonMilk;
+    src: url(../../fonts/LemonMilk.otf);
 }
 
+/* Breif style: */
 body {
     display: flex;
     justify-content: center;
@@ -32,12 +27,26 @@ body {
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url(images/food-background.jpg)
+    background-image: url(../../Images/Background-images/food-background1.jpg);
+    margin: 0;
+    padding: 0;
+    font-family: "OpenSans", sans-serif;
+    font-weight: 550;
 }
 
-/* Navigation bar */
+#wrapper {
+    background-color: #161718;
+    min-height: 100%;
+    width: 100%;
+}
 
-.header {
+.hrSeperator {
+    border: 1px #5b7e53 solid;
+    text-align: center;
+}
+
+/* Navigation bar: */
+#header {
     position: fixed;
     top: 0;
     left: 0;
@@ -50,14 +59,14 @@ body {
     z-index: 100;
 }
 
-.logo {
+#logo {
     font-size: 32px;
     color: white;
     text-decoration: none;
     font-weight: 700;
 }
 
-.navbar a {
+#navbar a {
     position: relative;
     font-size: 18px;
     color: #fff;
@@ -66,7 +75,7 @@ body {
     margin-left: 40px;
 }
 
-.navbar a::after {
+#navbar a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -79,11 +88,11 @@ body {
     transition: transform .15s;
 }
 
-.navbar a:hover::after {
+#navbar a:hover::after {
     transform: scaleX(1);
 }
 
-.navbar .btnLogin-popup {
+#navbar #btnLogin-popup {
     width: 130px;
     height: 50px;
     background: transparent;
@@ -98,18 +107,12 @@ body {
     transition: .5s;
 }
 
-.navbar .btnLogin-popup:hover {
+#navbar #btnLogin-popup:hover {
     background: #ffffff;
     color: #162938;
 }
 
-* {
-margin: 0;
-font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-}
-
-.recipes {
+ .recipes {
     position: relative;
     height: 100%;
     background: transparent;
@@ -125,21 +128,8 @@ font-family: "Poppins", sans-serif;
     flex-wrap: wrap;
 }
 
-/* Recipe card */
-.recipes .recipeCardTop {
-    display: flex;
-}
-
-.recipeCreate {
-    border-radius: 50%;
-}
-
-.hrSeperator {
-    border: 1px #5b7e53 solid;
-    text-align: center;
-}
-
-.recipes .recipeCard {
+/* Recipe card: */
+ #recipeCard {
     background-color: #d3dad2;
     border: #5b7e53 8px solid;
     color: #2A2B2E;
@@ -149,71 +139,17 @@ font-family: "Poppins", sans-serif;
     height: 850px;
     width: 470px;
     text-align: center;
+    font-weight: 550;
 }
 
-.recipeCardTop {
+#recipeCardTop {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 20px;
+    margin: 0;
 }
 
-.recipes .recipeCard .recipeCardAuthor {
-    font-size: 15px;
-}
-
-.recipes .recipeCard .recipeCardName {
-    font-weight: 650;
-    font-size: 25px;
-    font-family: "Poppins", sans-serif;
-}
-
-.recipes .recipeCard .recipeCardDescription {
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 18px;
-}
-
-.recipes .recipeCard .recipeCardTimeToMake {
-     font-size: 18px;
-     display: flex;
-     width: 100%;
-     align-items: center;
-     justify-content: center;
-     gap: 10px;
-    margin-top: 8px;
-}
-
-.recipes .recipeCard .recipeCardCostToMake {
-    font-size: 18px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-bottom: 14px;
-}
-
-.recipes .recipeCard .recipeCardFoodImg {
-    width: 100%;
-    height: 430px;
-    align-content: center;
-    border-radius: 7px;
-    border: 4px solid #32522a;
-
-}
-.recipes .recipeCard .recipeCardStats {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    display: flex;
-    gap: 10px;
-    background-color: #ffffff;
-    border-radius: 7px;
-    padding: 0 15px 0 15px;
-}
-
-.recipes .recipeCard .recipeCardInteract {
+#recipeCardInteract {
     background-color: #131313;
     height: 50px;
     width: 50px;
@@ -225,55 +161,118 @@ font-family: "Poppins", sans-serif;
     border: none;
 }
 
-.recipes .recipeCard .recipeCardInteractIcon {
+ #recipeCardName {
+    font-weight: 650;
+    font-size: 25px;
+    font-family: "Opensans", sans-serif;
+}
+
+ #recipeCardAuthor {
+    font-size: 15px;
+}
+
+ #recipeCardDescription {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: "AlbertSans", sans-serif;
+}
+
+ #recipeCardTimeToMake {
+     font-size: 18px;
+     display: flex;
+     width: 100%;
+     align-items: center;
+     justify-content: center;
+     gap: 10px;
+    margin-top: 8px;
+}
+
+ #recipeCardCostToMake {
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 14px;
+}
+
+ #recipeCardFoodImg {
+    width: 100%;
+    height: 430px;
+    align-content: center;
+    border-radius: 7px;
+    border: 4px solid #32522a;
+
+}
+ #recipeCardStats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 7px;
+    padding: 0 15px 0 15px;
+    margin-top: 5px;
+
+}
+
+/* Icons recolor and position:*/
+img {
+    vertical-align: middle;
+}
+
+ #recipeCardInteractIcon {
     align-items: center;
     vertical-align: middle;
     filter: invert(97%) sepia(100%) saturate(13%) hue-rotate(250deg) brightness(104%) contrast(104%);
-}
-
-.recipes .recipeCard .recipeCardStats img {
-    vertical-align: middle;
 }
 
 #eeee {
     filter: invert(7%) sepia(11%) saturate(2977%) hue-rotate(169deg) brightness(93%) contrast(101%);
 }
 
-.recipes .recipeCard #viewIcon {
+#viewIcon {
     filter: invert(7%) sepia(11%) saturate(2977%) hue-rotate(169deg) brightness(93%) contrast(101%);
 }
 
-.recipes .recipeCard #likeIcon {
+#likeIcon {
     filter: invert(47%) sepia(51%) saturate(539%) hue-rotate(84deg) brightness(103%) contrast(97%);
 }
 
-.recipes .recipeCard #dislikeIcon {
+#dislikeIcon {
     filter: invert(35%) sepia(97%) saturate(3798%) hue-rotate(345deg) brightness(93%) contrast(102%);
 }
 
-.recipes .recipeCard .recipeCardStatistics {
-    font-weight: 660;
+.recipeCardStatistics {
+    font-weight: 650;
+    font-family: "Nunito", sans-serif;
 }
 
-.recipes .recipeCard .recipeCardCheck {
+/* Button that opens the recipe: */
+ #recipeCardCheck {
     border-radius: 40px;
-    width: 100%;
+    min-width: 100%;
     height: 65px;
-    font-size: 2em;
-    background-color: #4fb835;
-    font-family: "Fredoka-one", sans-serif;
-    font-weight: 450;
+    font-size: 20px;
+    background-color: #4c803f;
+    font-family: "AlbertSans", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
     transition: all 0.2s ease;
-    border: 3px #32522a solid;
+    border: 2px #215f10 solid;
     margin-top: 20px;
     cursor: pointer;
+    color: white;
+    padding: 0 15px 0 15px;
 }
 
-  .recipeCardCheck:active {
+  #recipeCardCheck:active {
     transform: scale(0.96);
   }
-  .recipeCardCheck:before,
-  .recipeCardCheck:after {
+  #recipeCardCheck:before,
+  #recipeCardCheck:after {
     content: "";
     width: 150%;
     left: 50%;
@@ -285,8 +284,7 @@ font-family: "Poppins", sans-serif;
 
 
 /* Recipes' other elements*/
-
-.recipesGreeting {
+#recipesGreeting {
     font-size: 50px;
     font-weight: 700;
     text-align: center;
@@ -297,7 +295,7 @@ font-family: "Poppins", sans-serif;
     margin-bottom: 50px 30px 50px 30px;
 }
 
-.recipeCreate {
+#recipeCreate {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -310,4 +308,3 @@ font-family: "Poppins", sans-serif;
     width: 65px;
     height: 65px;
 }
-
